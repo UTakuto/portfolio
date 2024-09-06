@@ -1,5 +1,14 @@
-.main {
-    padding-top: 80px;
+// .main {
+//     padding-top: 50px;
+// }
+
+.mainViewBox {
+    .mainView {
+        width: 80%;
+        height: 550px;
+        margin: auto;
+        background-color: #ddd;
+    }
 }
 
 .about {
@@ -18,7 +27,7 @@
 
     .myPicture {
         position: absolute;
-        top: -20%;
+        top: -30%;
         left: 10%;
         z-index: -5;
         transform: translate(-20%);
