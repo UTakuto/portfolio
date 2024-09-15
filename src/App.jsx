@@ -11,7 +11,7 @@ export default function App() {
                 <section className="mainViewBox">
                     <div className="mainView"></div>
                     <div className="mainViewText">
-                        <h2>welcome my portfolio</h2>
+                        <h1>welcome my portfolio</h1>
                     </div>
                 </section>
 
@@ -34,6 +34,10 @@ export default function App() {
 
                         <Button />
                     </div>
+                </section>
+
+                <section className="works">
+                    <h2>Works</h2>
                 </section>
             </div>
             <Footer />
