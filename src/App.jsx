@@ -2,6 +2,7 @@ import Header from "./components/header/Header";
 import Button from "./components/button/Button";
 import Footer from "./components/footer/Footer";
 import "./styles/app.scss";
+import Productions from "./layouts/Productions";
 
 export default function App() {
     return (
@@ -38,6 +39,9 @@ export default function App() {
 
                 <section className="works">
                     <h2>Works</h2>
+
+                    <Productions />
+                    <Productions />
                 </section>
             </div>
             <Footer />
