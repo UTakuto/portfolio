@@ -72,20 +72,26 @@
                 position: relative;
                 font-size: 1.4rem;
                 text-align: right;
-                &::after {
-                    content: "";
-                    display: inline-block;
-                    vertical-align: middle;
+
+                a {
                     color: #fefefe;
-                    line-height: 1;
-                    width: 0;
-                    height: 0;
-                    border-style: solid;
-                    border-color: #fefefe;
-                    border-width: 0.6rem 1rem;
-                    border-left-color: #fefefe;
-                    border-right: 0;
-                    margin: -3px 0 0 10px;
+                    text-decoration: none;
+
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        vertical-align: middle;
+                        color: #fefefe;
+                        line-height: 1;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-color: #fefefe;
+                        border-width: 0.6rem 1rem;
+                        border-left-color: #fefefe;
+                        border-right: 0;
+                        margin: -3px 0 0 10px;
+                    }
                 }
             }
         }

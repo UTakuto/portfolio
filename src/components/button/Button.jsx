@@ -3,8 +3,10 @@ import "./button.scss";
 export default function Button() {
     return (
         <div>
-            <p>
-                <a href="#">more</a>
+            <p className="button">
+                <a className="buttonLink" href="#">
+                    more
+                </a>
             </p>
         </div>
     );
