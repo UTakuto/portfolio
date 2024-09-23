@@ -1,3 +1,5 @@
+import "./ProductionItem.scss";
+
 export default function ProductionItem() {
     return (
         <div className="productionContent">

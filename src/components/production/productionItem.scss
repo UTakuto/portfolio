@@ -33,6 +33,7 @@
         padding: 50px;
         letter-spacing: 0.1rem;
         color: #fefefe;
+        text-align: left;
 
         &:hover {
             opacity: 1;
@@ -40,6 +41,7 @@
 
         .innerData {
             font-size: 1.3rem;
+            padding-bottom: 10px;
         }
 
         .grade {
