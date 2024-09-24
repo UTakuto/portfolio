@@ -1,15 +1,7 @@
-import "./ProductionItem.scss";
 import PropTypes from "prop-types";
+import "./ProductionItem.scss";
 
-ProductionItem.propTypes = {
-    img: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
-    grade: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-};
-
-export default function ProductionItem({ img, date, grade, title, type }) {
+export default function ProductionItem({ info }) {
     return (
         <div className="productionContent">
             <a
@@ -17,13 +9,13 @@ export default function ProductionItem({ img, date, grade, title, type }) {
                 target="_blank"
             >
                 <div className="productionImg">
-                    <img src={img} alt="" />
+                    <img src={info.img} alt="" />
                 </div>
                 <div className="innerContent">
-                    <p className="innerData">{date}</p>
-                    <p className="grade">{grade}</p>
-                    <h3 className="title">{title}</h3>
-                    <p className="type">{type}</p>
+                    <p className="innerData">{info.date}</p>
+                    <p className="grade">{info.grade}</p>
+                    <h3 className="title">{info.title}</h3>
+                    <p className="type">{info.type}</p>
                     <div className="productionButton">
                         <p>
                             <a href="#">詳細はこちら</a>
@@ -34,3 +26,13 @@ export default function ProductionItem({ img, date, grade, title, type }) {
         </div>
     );
 }
+
+ProductionItem.propTypes = {
+    info: PropTypes.shape({
+        img: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+        grade: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired,
+    }).isRequired,
+};

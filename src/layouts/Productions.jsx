@@ -23,14 +23,7 @@ export default function Productions() {
         <ul className="productionWrap">
             <li className="productionList">
                 {productionInfo.map((info, index) => (
-                    <ProductionItem
-                        key={index}
-                        img={info.img}
-                        date={info.date}
-                        title={info.title}
-                        grade={info.grade}
-                        type={info.type}
-                    />
+                    <ProductionItem key={index} info={info} />
                 ))}
             </li>
         </ul>
