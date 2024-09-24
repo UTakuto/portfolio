@@ -30,7 +30,7 @@
         opacity: 0;
         background: rgba(8, 8, 8, 0.6);
         transition: ease-in-out 0.5s;
-        padding: 50px;
+        padding: 25px;
         letter-spacing: 0.1rem;
         color: #fefefe;
         text-align: left;
@@ -41,7 +41,7 @@
 
         .innerData {
             font-size: 1.3rem;
-            padding-bottom: 10px;
+            padding-bottom: 20px;
         }
 
         .grade {
@@ -55,13 +55,13 @@
             font-size: 2rem;
             font-weight: bold;
             opacity: 1;
-            margin-top: 20px;
+            padding: 25px 0;
             letter-spacing: 0.15rem;
         }
 
         .type {
             font-size: 1.4rem;
-            padding-top: 20px;
+            // padding: 20px;
             letter-spacing: 0.15rem;
         }
 
