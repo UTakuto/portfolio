@@ -1,6 +1,15 @@
 import "./ProductionItem.scss";
+import PropTypes from "prop-types";
 
-export default function ProductionItem() {
+ProductionItem.propTypes = {
+    img: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    grade: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+};
+
+export default function ProductionItem({ img, date, grade, title, type }) {
     return (
         <div className="productionContent">
             <a
@@ -8,13 +17,13 @@ export default function ProductionItem() {
                 target="_blank"
             >
                 <div className="productionImg">
-                    <img src="../src/assets/appeal_1.jpg" alt="" />
+                    <img src={img} alt="" />
                 </div>
                 <div className="innerContent">
-                    <p className="innerData">2023.04~2023.07</p>
-                    <p className="grade">1年 前期作品・個人</p>
-                    <h3 className="title">Relax coffee</h3>
-                    <p className="type">web/code</p>
+                    <p className="innerData">{date}</p>
+                    <p className="grade">{grade}</p>
+                    <h3 className="title">{title}</h3>
+                    <p className="type">{type}</p>
                     <div className="productionButton">
                         <p>
                             <a href="#">詳細はこちら</a>
