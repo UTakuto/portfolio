@@ -1,7 +1,7 @@
 import Header from "./components/header/Header";
 import Button from "./components/button/Button";
 import Footer from "./components/footer/Footer";
-import "./styles/app.scss";
+import "./styles/app.css";
 import Productions from "./layouts/Productions";
 
 export default function App() {

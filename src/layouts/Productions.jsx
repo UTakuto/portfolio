@@ -1,5 +1,5 @@
 import ProductionItem from "../components/production/ProductionItem";
-import "../styles/Productions.scss";
+import "../styles/Productions.css";
 
 export default function Productions() {
     const productionInfo = [

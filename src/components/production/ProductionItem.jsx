@@ -1,13 +1,10 @@
 import PropTypes from "prop-types";
-import "./ProductionItem.scss";
+import "./ProductionItem.css";
 
 export default function ProductionItem({ info }) {
     return (
         <div className="productionContent">
-            <a
-                href="https://click.ecc.ac.jp/ecc/tuemori/1grader/relax_coffee/web/"
-                target="_blank"
-            >
+            <a href="https://click.ecc.ac.jp/ecc/tuemori/1grader/relax_coffee/web/" target="_blank">
                 <div className="productionImg">
                     <img src={info.img} alt="" />
                 </div>
