@@ -39,7 +39,7 @@ export default function App() {
                                         エンジニアを目指して日々精進しています。
                                     </p>
 
-                                    <Button text="フォトギャラリーへ" link="../pages/PhotoPage" />
+                                    <Button text="フォトギャラリーへ" link="/photo" />
                                 </div>
                             </section>
 

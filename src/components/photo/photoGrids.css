@@ -1,32 +1,22 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
+.photos-container {
+    /* padding: 20px; */
     max-width: 1200px;
     margin: auto;
 }
 
-.grid-item {
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
+.masonry-grid {
+    columns: 4 200px;
+    column-gap: 5px;
 }
 
-.grid-item img {
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 5px;
+}
+
+.masonry-item img {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.metadata {
-    padding: 10px;
-    font-size: 0.8rem;
-    background-color: #f9f9f9;
-    border-top: 1px solid #eee;
-}
-
-.metadata p {
-    margin: 5px 0;
+    border-radius: 8px;
 }
