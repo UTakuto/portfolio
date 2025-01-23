@@ -24,7 +24,6 @@ export default function App() {
                             </section>
 
                             <section className="about">
-                                <div className="bakCenter"></div>
                                 <div className="myPicture"></div>
                                 <div className="aboutTextContent">
                                     <h2>About</h2>
