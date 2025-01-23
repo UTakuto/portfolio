@@ -36,8 +36,9 @@ header {
             transition: ease-in-out 0.4s;
 
             &:hover {
-                color: #fefefe;
-                background-color: #38357a;
+                color: #333;
+                border-radius: 10px;
+                background-color: rgba(41, 123, 230, 0.3);
             }
         }
     }

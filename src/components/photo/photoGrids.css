@@ -2,6 +2,8 @@
     /* padding: 20px; */
     max-width: 1200px;
     margin: auto;
+    border-top: solid 1px #555;
+    padding-top: 50px;
 }
 
 .masonry-grid {
@@ -18,5 +20,5 @@
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 }
