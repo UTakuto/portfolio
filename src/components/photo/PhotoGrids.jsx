@@ -14,7 +14,7 @@ function PhotoGrids() {
             <div className="masonry-grid">
                 {images.map((photo) => (
                     <div className="masonry-item" key={photo.id}>
-                        <img src={photo.src} alt={photo.alt} />
+                        <img src={photo.src} alt={photo.alt} loading="lazy" />
                     </div>
                 ))}
             </div>

@@ -1,4 +1,4 @@
-const years = ["2021", "2022", "2023", "2024"];
+// const years = ["2021", "2022", "2023", "2024"];
 
 // 各年のファイルを個別に読み込む
 const imageFiles2024 = import.meta.glob("../assets/2024/*.{jpg,JPG,jpeg,JPEG,png,PNG,svg,SVG}", {
