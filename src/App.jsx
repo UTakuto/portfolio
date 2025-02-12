@@ -1,10 +1,11 @@
 import Header from "./components/header/Header";
-import Button from "./components/button/Button";
+// import Button from "./components/button/Button";
 import PhotoPage from "./pages/PhotoPage";
 import Footer from "./components/footer/Footer";
 import "./styles/app.css";
 import Productions from "./layouts/Productions";
 import { Route, Routes } from "react-router-dom";
+import About from "./components/about/About";
 // import Particles from "./components/particles/particles";
 
 export default function App() {
@@ -23,7 +24,8 @@ export default function App() {
                                 </div>
                             </section>
 
-                            <section className="about">
+                            <About />
+                            {/* <section className="about">
                                 <div className="myPicture"></div>
                                 <div className="aboutTextContent">
                                     <h2>About</h2>
@@ -40,7 +42,7 @@ export default function App() {
 
                                     <Button text="フォトギャラリーへ" link="/photo" />
                                 </div>
-                            </section>
+                            </section> */}
 
                             <section className="works">
                                 <h2>Works</h2>

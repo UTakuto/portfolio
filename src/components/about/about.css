@@ -1,0 +1,44 @@
+.about {
+    display: flex;
+    justify-content: flex-start;
+    gap: 150px;
+    padding-left: 60px;
+
+    .myPicture {
+        width: 500px;
+        height: 500px;
+        background-color: #ddd;
+    }
+
+    .aboutTextWrap {
+        width: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50px;
+
+        .aboutTextContent {
+            h3 {
+                font-size: 3rem;
+
+                span {
+                    font-weight: normal;
+                    font-size: 2.4rem;
+                }
+            }
+
+            .aboutText {
+                padding-top: 20px;
+                font-size: 1.8rem;
+                line-height: 1.4;
+
+                .aboutTextSpan {
+                    display: block;
+                    font-size: 1.6rem;
+                    color: #888;
+                }
+            }
+        }
+    }
+}
