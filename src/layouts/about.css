@@ -1,0 +1,60 @@
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 50px;
+    /* padding: 50px 0 0 50px; */
+
+    .myPicture {
+        width: 500px;
+        height: 500px;
+        opacity: 0.8;
+        overflow: hidden;
+
+        img {
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+            overflow: hidden;
+        }
+    }
+
+    .aboutTextWrap {
+        width: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50px;
+
+        .aboutTextContent {
+            h3 {
+                font-size: 3rem;
+
+                span {
+                    font-weight: normal;
+                    font-size: 2.4rem;
+                }
+            }
+
+            .aboutText {
+                padding-top: 20px;
+                font-size: 1.6rem;
+                line-height: 1.4;
+
+                .aboutTextSpan {
+                    display: block;
+                    font-size: 1.6rem;
+                    color: #888;
+                }
+            }
+        }
+    }
+
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
