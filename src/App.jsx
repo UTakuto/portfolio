@@ -1,11 +1,11 @@
 import Header from "./components/header/Header";
-// import Button from "./components/button/Button";
-import PhotoPage from "./pages/PhotoPage";
+// import PhotoPage from "./pages/PhotoPage";
+import AboutDetail from "./components/about/AboutDetail";
 import Footer from "./components/footer/Footer";
 import "./styles/app.css";
 import Productions from "./layouts/Productions";
 import { Route, Routes } from "react-router-dom";
-import About from "./components/about/About";
+import About from "./pages/AboutPage";
 // import Particles from "./components/particles/particles";
 
 export default function App() {
@@ -22,27 +22,56 @@ export default function App() {
                                 <div className="mainViewText">
                                     <h1>welcome my portfolio</h1>
                                 </div>
+                                <div className="scroll-btn">
+                                    <svg style={{ overflow: "visible" }}>
+                                        <desc>Created with Snap</desc>
+                                        <rect
+                                            x="1"
+                                            y="1"
+                                            width="30"
+                                            height="48"
+                                            rx="19"
+                                            ry="15"
+                                            stroke="#fff"
+                                            fill="none"
+                                            style={{
+                                                strokeWidth: 2,
+                                                strokeLinecap: "round",
+                                                opacity: 0.3,
+                                            }}
+                                        />
+                                        <rect
+                                            className="animated"
+                                            x="1"
+                                            y="1"
+                                            width="30"
+                                            height="48"
+                                            rx="19"
+                                            ry="15"
+                                            stroke="#ffffff"
+                                            fill="none"
+                                            style={{
+                                                strokeWidth: 2,
+                                                strokeLinecap: "round",
+                                                opacity: 0.8,
+                                                visibility: "visible",
+                                                strokeDashoffset: 0,
+                                                strokeDasharray: "0px, 0px",
+                                            }}
+                                        />
+                                        <circle
+                                            className="ball"
+                                            cx="16"
+                                            cy="16.638031364511352"
+                                            r="2.8000000000000003"
+                                            fill="#ffffff"
+                                            stroke="none"
+                                        />
+                                    </svg>
+                                </div>
                             </section>
 
                             <About />
-                            {/* <section className="about">
-                                <div className="myPicture"></div>
-                                <div className="aboutTextContent">
-                                    <h2>About</h2>
-                                    <h3>
-                                        上森 拓翔 <span>uemori takuto</span>
-                                    </h3>
-                                    <p>
-                                        ECCコンピュータ専門学校 Webデザインコース 26年卒業予定
-                                        <br />
-                                        2005年3月7日 / 兵庫県出身 / 趣味：音楽鑑賞,写真撮影
-                                        <br />
-                                        エンジニアを目指して日々精進しています。
-                                    </p>
-
-                                    <Button text="フォトギャラリーへ" link="/photo" />
-                                </div>
-                            </section> */}
 
                             <section className="works">
                                 <h2>Works</h2>
@@ -52,7 +81,8 @@ export default function App() {
                         </div>
                     }
                 />
-                <Route path="/photo" element={<PhotoPage />} />
+                {/* <Route path="/photo" element={<PhotoPage />} /> */}
+                <Route path="/detail" element={<AboutDetail />} />
             </Routes>
             <Footer />
         </>
