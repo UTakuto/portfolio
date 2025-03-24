@@ -1,10 +1,11 @@
 import PropTypes from "prop-types";
 import "./ProductionItem.css";
+import { Link } from "react-router-dom";
 
 export default function ProductionItem({ info }) {
     return (
-        <div className="productionContent">
-            <a href="https://click.ecc.ac.jp/ecc/tuemori/1grader/relax_coffee/web/" target="_blank">
+        <Link to={`/work/${info.id}`} className="productionLink">
+            <div className="productionContent">
                 <div className="productionImg">
                     <img src={info.img} alt="" />
                 </div>
@@ -15,17 +16,18 @@ export default function ProductionItem({ info }) {
                     <p className="type">{info.type}</p>
                     <div className="productionButton">
                         <p>
-                            <a href="#">詳細はこちら</a>
+                            <Link to={`/work/${info.id}`}>詳細はこちら</Link>
                         </p>
                     </div>
                 </div>
-            </a>
-        </div>
+            </div>
+        </Link>
     );
 }
 
 ProductionItem.propTypes = {
     info: PropTypes.shape({
+        id: PropTypes.number.isRequired,
         img: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
         grade: PropTypes.string.isRequired,
