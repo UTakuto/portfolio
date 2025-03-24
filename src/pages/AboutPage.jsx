@@ -1,7 +1,7 @@
 import Button from "../components/button/Button";
 import { Route, Routes } from "react-router-dom";
 import AboutDetail from "../components/about/AboutDetail";
-import "../layouts/about.css";
+import "../styles/about.css";
 import myImage from "../assets/my.jpeg";
 
 export default function About() {
