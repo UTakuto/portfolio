@@ -3,9 +3,10 @@ import Header from "./components/header/Header";
 import AboutDetail from "./components/about/AboutDetail";
 import Footer from "./components/footer/Footer";
 import "./styles/app.css";
-import Productions from "./layouts/Productions";
+import Work from "./pages/WorkPage";
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/AboutPage";
+import WorkDetails from "./components/work/WorkDetails";
 // import Particles from "./components/particles/particles";
 
 export default function App() {
@@ -73,15 +74,12 @@ export default function App() {
 
                             <About />
 
-                            <section className="works">
-                                <h2>Works</h2>
-
-                                <Productions />
-                            </section>
+                            <Work />
                         </div>
                     }
                 />
-                {/* <Route path="/photo" element={<PhotoPage />} /> */}
+                <Route path="/work" element={<Work />} />
+                <Route path="/work/:id" element={<WorkDetails />} />
                 <Route path="/detail" element={<AboutDetail />} />
             </Routes>
             <Footer />
