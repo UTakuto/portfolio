@@ -2,7 +2,7 @@ import { useState } from "react";
 import ProductionItem from "../components/production/ProductionItem";
 import WorkFilter from "../components/work/WorkFilter";
 import { productionInfo } from "../data/productions.js";
-import "../styles/Productions.css";
+import "../styles/productions.css";
 
 export default function Productions() {
     const [selectedCategory, setSelectedCategory] = useState("all");
