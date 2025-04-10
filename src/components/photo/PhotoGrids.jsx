@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import photos from "../../data/photos";
-import "./PhotoGrids.css";
+import "./photoGrids.css";
 
 function PhotoGrids() {
     const [images, setImages] = useState([]);

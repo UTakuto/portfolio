@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./ProductionItem.css";
+import "./productionItem.css";
 import { Link } from "react-router-dom";
 
 export default function ProductionItem({ info }) {
