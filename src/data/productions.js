@@ -1,10 +1,20 @@
+// 画像をimportして使用する形式に変更
+import monosirihaunter from "../assets/monosirihaunter.png";
+import chatapp from "../assets/chatapp.png";
+import moonphase from "../assets/moonphase.png";
+import reactors from "../assets/reactors.png";
+import relaxCoffee from "../assets/RelaxCoffee.png";
+import partTimeManager from "../assets/PartTimeManager.jpg";
+import monosirihunterDetail1 from "../assets/monosirihunter-detail1.png";
+import chatappDetail1 from "../assets/chat-app-detail1.png";
+
 export const productionInfo = [
     {
         id: 1,
         title: "ものしりハンター",
         grade: "2年 後期作品・チーム",
         date: "2024.10~2025.02",
-        img: "../src/assets/monosirihaunter.png",
+        img: monosirihaunter,
         type: "code",
         category: "production",
         description:
@@ -23,11 +33,11 @@ export const productionInfo = [
             strongPoints: [
                 {
                     text: "今回はChatGPT APIを使用し、物体の名前および説明文を生成する仕組みを実装しました。子どもたちに分かりやすく伝えるために、「すべてひらがなで出力する」といった細かい調整に苦戦しましたが、具体的な禁止事項や例文をプロンプトに組み込むことで、より分かりやすい出力を得られるようになりました。",
-                    img: ["../src/assets/monosirihunter-detail1.png"],
+                    img: monosirihunterDetail1,
                 },
                 {
                     text: "また、子どもたちがカメラで写真を撮影する際にリアルな体験ができるよう、画面に補助線を表示する機能を実装しました。この補助線に基づいてVision APIのクロップ機能を活用し、撮影画像のサイズをある程度固定することで、見やすい画像を取得しています。UI面では、カードを使った遊び画面にアニメーションを加えることで視覚的に楽しめるように工夫しました。全体のスタイル調整にも力を入れており、デザイン面の要望であった「あかさたな行」に応じてカードのスタイルを変更するロジックも実装しています。これにより、子どもたちが楽しく、直感的に操作できるようになっています。",
-                    img: ["../src/assets/monosirihunter-detail1.png"],
+                    img: monosirihunterDetail1,
                 },
             ],
 
@@ -48,7 +58,7 @@ export const productionInfo = [
         title: "ChatApp",
         grade: "2年 後期・習作",
         date: "2024.10~2024.12",
-        img: "../src/assets/chatapp.png",
+        img: chatapp,
         type: "design/code",
         category: "practice",
         description: "FirebaseのRealtime Databaseを使用したチャットアプリ",
@@ -61,7 +71,7 @@ export const productionInfo = [
             strongPoints: [
                 {
                     text: "このアプリを制作しようと思ったきっかけは、私自身がオープンキャンパスのスタッフとして活動していた際に感じた、「スタッフ間での情報共有がスムーズに行われていない」という課題です。現場では限られた時間の中で連携を取る必要があり、素早く正確に情報を伝える手段が求められていました。そこで本アプリでは、事前に定型文として用意したメッセージをボタンに割り当て、タップするだけで素早く情報を共有できる仕組みを実装しました。これにより、現場でのやりとりがスピーディーかつストレスなく行えるようになり、全体の業務効率の向上を目指しています。",
-                    img: ["../src/assets/chat-app-detail1.png"],
+                    img: chatappDetail1,
                 },
             ],
             challenges: [
@@ -77,7 +87,7 @@ export const productionInfo = [
         title: "Moon-phase",
         grade: "2年 後期・習作",
         date: "2024.09~2024.10",
-        img: "../src/assets/moonphase.png",
+        img: moonphase,
         type: "design/code",
         category: "practice",
         description: "ゲーミフィケーションを活用した学習アプリケーション",
@@ -97,7 +107,7 @@ export const productionInfo = [
         title: "歴てく",
         grade: "2年 前期作品・チーム・企業連携",
         date: "2024.05~2024.07",
-        img: "../src/assets/reactors.png",
+        img: reactors,
         type: "code",
         category: "production",
         description: "ゲーミフィケーションを活用した学習アプリケーション",
@@ -117,7 +127,7 @@ export const productionInfo = [
         title: "Relax coffee",
         grade: "1年 前期作品・個人",
         date: "2023.04~2023.07",
-        img: "../src/assets/RelaxCoffee.png",
+        img: relaxCoffee,
         type: "design/code",
         category: "production",
         description: "ゲーミフィケーションを活用した学習アプリケーション",
@@ -137,7 +147,7 @@ export const productionInfo = [
         title: "バイト マネージャー",
         grade: "1年 後期作品・個人",
         date: "2023.10~2024.02",
-        img: "../src/assets/PartTimeManager.jpg",
+        img: partTimeManager,
         type: "design/code",
         category: "production",
         description: "ゲーミフィケーションを活用した学習アプリケーション",
