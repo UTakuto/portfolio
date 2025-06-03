@@ -102,7 +102,19 @@ export default function WorkDetails() {
             </div>
 
             <div className="backButton">
-                <a href="/work">戻る</a>
+                <button
+                    onClick={() => {
+                        navigate("/");
+                        // 遷移後にworks-sectionまでスクロール
+                        setTimeout(() => {
+                            document
+                                .getElementById("works-section")
+                                ?.scrollIntoView({ behavior: "smooth" });
+                        }, 100);
+                    }}
+                >
+                    戻る
+                </button>
             </div>
         </div>
     );
