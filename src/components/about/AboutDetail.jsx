@@ -1,5 +1,5 @@
 import "./aboutDetail.css";
-import Button from "../button/Button";
+// import Button from "../button/Button";
 import PhotoPage from "../../pages/PhotoPage";
 import { Route, Routes } from "react-router-dom";
 import myImage from "../../assets/my.jpeg";
@@ -30,9 +30,9 @@ export default function AboutDetail() {
                                         {/* 私が目指す将来像は、技術力とリーダーシップを磨き、チーム全体のスキルアップと成長を支える存在になることです。 */}
                                     </p>
                                 </div>
-                                <div className="buttonContainer">
+                                {/* <div className="buttonContainer">
                                     <Button text="フォトギャラリーへ" link="/photo" />
-                                </div>
+                                </div> */}
                             </div>
                         </section>
                     </div>
