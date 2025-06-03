@@ -3,9 +3,10 @@ import monosirihaunter from "../assets/monosirihaunter.png";
 import chatapp from "../assets/chatapp.png";
 import moonphase from "../assets/moonphase.png";
 import reactors from "../assets/reactors.png";
-import relaxCoffee from "../assets/RelaxCoffee.png";
-import partTimeManager from "../assets/PartTimeManager.jpg";
+// import relaxCoffee from "../assets/RelaxCoffee.png";
+// import partTimeManager from "../assets/PartTimeManager.jpg";
 import monosirihunterDetail1 from "../assets/monosirihunter-detail1.png";
+import monosirihunterDetail2 from "../assets/monosirihunter-detail2.png";
 import chatappDetail1 from "../assets/chat-app-detail1.png";
 
 export const productionInfo = [
@@ -32,8 +33,8 @@ export const productionInfo = [
         reflection: {
             strongPoints: [
                 {
-                    text: "今回はChatGPT APIを使用し、物体の名前および説明文を生成する仕組みを実装しました。子どもたちに分かりやすく伝えるために、「すべてひらがなで出力する」といった細かい調整に苦戦しましたが、具体的な禁止事項や例文をプロンプトに組み込むことで、より分かりやすい出力を得られるようになりました。",
-                    img: monosirihunterDetail1,
+                    text: "今回は、子どもたちの幅広い興味に柔軟に答えれるOpenAI APIを活用する方法をとりました。これにより、多様な物体に柔軟に対応できるようになりましたが、一方で「子どもにも伝わるようなやさしい日本語で」「すべてひらがなで」「難しい単語を避ける」といった細かな出力調整が必要となりました。プロンプトを工夫し、テンプレートを設けるなどして改善を重ねた結果、子どもたちにもわかりやすい情報を安定して提供できるようになりました。",
+                    img: monosirihunterDetail2,
                 },
                 {
                     text: "また、子どもたちがカメラで写真を撮影する際にリアルな体験ができるよう、画面に補助線を表示する機能を実装しました。この補助線に基づいてVision APIのクロップ機能を活用し、撮影画像のサイズをある程度固定することで、見やすい画像を取得しています。UI面では、カードを使った遊び画面にアニメーションを加えることで視覚的に楽しめるように工夫しました。全体のスタイル調整にも力を入れており、デザイン面の要望であった「あかさたな行」に応じてカードのスタイルを変更するロジックも実装しています。これにより、子どもたちが楽しく、直感的に操作できるようになっています。",
@@ -42,14 +43,10 @@ export const productionInfo = [
             ],
 
             challenges: [
-                "モバイルデバイスの最適化",
-                "パフォーマンスの改善",
-                "ユーザーテストの実施と改善",
+                "今後の課題としましては、ユーザー行動のログ分析と改善どのような物がよく撮影されているか、誤認識が多いパターンなどを把握するためのログ収集と分析機能が未実装なので、今後はデータを元にプロンプトやUIを改善していく必要があります。また、多言語対応の検討でひらがな表示に加えて、他言語（英語など）との切り替え機能を追加することで、言語教育にも応用できる可能性があることから追加実装していきたいと考えております",
             ],
             learnings: [
-                "チームリーダーとしてのプロジェクト管理スキル",
-                "APIの統合と効率的な処理の実装",
-                "ユーザー体験を重視した設計の重要性",
+                "今回の開発を通して学んだのは、「子どもが使う体験を想定し、機能・デザイン・言葉を丁寧に調整することの重要性」と、「当初の設計にとらわれず、目的に合った技術に柔軟に切り替える判断力」です。子どもが使うアプリでは、大人が考える「便利」や「正確さ」以上に、直感的な操作や親しみやすい言葉が大切だと改めて感じました。わかりやすく伝えることで、子どもたちが興味を持った物について自然と学べる体験をつくることができます。また、技術面では当初、Google Vision APIと自作のデータベースを組み合わせて物体検知を行おうと考えていましたが、情報量の多さやデータ整備の負担、対象物の偏りといった課題が浮き彫りになりました。そこで、幅広い対象に柔軟に対応できるOpenAI APIへ切り替える判断を行いました。結果として、多様な入力に対応できるようになり、実用性も大きく向上しました。一方で、生成AIに依存した構成になってしまったことは反省点でもあります。AIが使えない環境では動作しないため、今後はキャッシュ機能や一部データの事前生成など、AI依存度を下げる工夫も検討したいと考えています。",
             ],
         },
     },
@@ -122,44 +119,44 @@ export const productionInfo = [
             learnings: [],
         },
     },
-    {
-        id: 6,
-        title: "Relax coffee",
-        grade: "1年 前期作品・個人",
-        date: "2023.04~2023.07",
-        img: relaxCoffee,
-        type: "design/code",
-        category: "production",
-        description: "ゲーミフィケーションを活用した学習アプリケーション",
-        technologies: ["React", "TypeScript", "Firebase"],
-        role: ["フロントエンド", "チームリーダー"],
-        url: "https://monosiri-hunter.vercel.app/login",
-        github: "",
-        awards: [],
-        reflection: {
-            strongPoints: [],
-            challenges: [],
-            learnings: [],
-        },
-    },
-    {
-        id: 7,
-        title: "バイト マネージャー",
-        grade: "1年 後期作品・個人",
-        date: "2023.10~2024.02",
-        img: partTimeManager,
-        type: "design/code",
-        category: "production",
-        description: "ゲーミフィケーションを活用した学習アプリケーション",
-        technologies: ["React", "TypeScript", "Firebase"],
-        role: ["フロントエンド", "チームリーダー"],
-        url: "https://monosiri-hunter.vercel.app/login",
-        github: "",
-        awards: [],
-        reflection: {
-            strongPoints: [],
-            challenges: [],
-            learnings: [],
-        },
-    },
+    // {
+    //     id: 6,
+    //     title: "Relax coffee",
+    //     grade: "1年 前期作品・個人",
+    //     date: "2023.04~2023.07",
+    //     img: relaxCoffee,
+    //     type: "design/code",
+    //     category: "production",
+    //     description: "ゲーミフィケーションを活用した学習アプリケーション",
+    //     technologies: ["React", "TypeScript", "Firebase"],
+    //     role: ["フロントエンド", "チームリーダー"],
+    //     url: "https://monosiri-hunter.vercel.app/login",
+    //     github: "",
+    //     awards: [],
+    //     reflection: {
+    //         strongPoints: [],
+    //         challenges: [],
+    //         learnings: [],
+    //     },
+    // },
+    // {
+    //     id: 7,
+    //     title: "バイト マネージャー",
+    //     grade: "1年 後期作品・個人",
+    //     date: "2023.10~2024.02",
+    //     img: partTimeManager,
+    //     type: "design/code",
+    //     category: "production",
+    //     description: "ゲーミフィケーションを活用した学習アプリケーション",
+    //     technologies: ["React", "TypeScript", "Firebase"],
+    //     role: ["フロントエンド", "チームリーダー"],
+    //     url: "https://monosiri-hunter.vercel.app/login",
+    //     github: "",
+    //     awards: [],
+    //     reflection: {
+    //         strongPoints: [],
+    //         challenges: [],
+    //         learnings: [],
+    //     },
+    // },
 ];
