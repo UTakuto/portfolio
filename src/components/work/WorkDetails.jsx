@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { productionInfo } from "../../data/productions";
 import "./WorkDetails.css";
+import Button from "../button/Button";
 
 export default function WorkDetails() {
     const { id } = useParams();
@@ -102,19 +103,17 @@ export default function WorkDetails() {
             </div>
 
             <div className="backButton">
-                <button
+                <Button
+                    text="戻る"
                     onClick={() => {
                         navigate("/");
-                        // 遷移後にworksまでスクロール
                         setTimeout(() => {
                             document
                                 .getElementById("works")
                                 ?.scrollIntoView({ behavior: "smooth" });
                         }, 100);
                     }}
-                >
-                    戻る
-                </button>
+                />
             </div>
         </div>
     );
