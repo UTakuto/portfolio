@@ -33,11 +33,11 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: px;
+        padding-right: 45px;
 
         li {
             position: relative;
-            padding-right: 30px;
+            padding-left: 60px;
 
             a {
                 position: relative;
