@@ -105,10 +105,10 @@ export default function WorkDetails() {
                 <button
                     onClick={() => {
                         navigate("/");
-                        // 遷移後にworks-sectionまでスクロール
+                        // 遷移後にworksまでスクロール
                         setTimeout(() => {
                             document
-                                .getElementById("works-section")
+                                .getElementById("works")
                                 ?.scrollIntoView({ behavior: "smooth" });
                         }, 100);
                     }}
