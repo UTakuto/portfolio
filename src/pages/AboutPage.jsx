@@ -10,7 +10,7 @@ export default function About() {
             <Route
                 path="/"
                 element={
-                    <section className="about">
+                    <section id="about" className="about">
                         <picture className="myPicture">
                             <img src={myImage} alt="上森拓翔" />
                         </picture>
