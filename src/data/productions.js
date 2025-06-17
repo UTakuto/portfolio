@@ -1,8 +1,8 @@
 // 画像をimportして使用する形式に変更
 import monosirihaunter from "../assets/monosirihaunter.png";
 import chatapp from "../assets/chatapp.png";
-import moonphase from "../assets/moonphase.png";
-import reactors from "../assets/reactors.png";
+// import moonphase from "../assets/moonphase.png";
+// import reactors from "../assets/reactors.png";
 // import relaxCoffee from "../assets/RelaxCoffee.png";
 // import partTimeManager from "../assets/PartTimeManager.jpg";
 import monosirihunterDetail1 from "../assets/monosirihunter-detail1.png";
@@ -79,46 +79,46 @@ export const productionInfo = [
             ],
         },
     },
-    {
-        id: 3,
-        title: "Moon-phase",
-        grade: "2年 後期・習作",
-        date: "2024.09~2024.10",
-        img: moonphase,
-        type: "design/code",
-        category: "practice",
-        description: "ゲーミフィケーションを活用した学習アプリケーション",
-        technologies: ["Next.js", "JavaScript", "Firebase"],
-        role: ["フロントエンド"],
-        url: "https://monosiri-hunter.vercel.app/login",
-        github: "",
-        awards: [],
-        reflection: {
-            strongPoints: [],
-            challenges: [],
-            learnings: [],
-        },
-    },
-    {
-        id: 4,
-        title: "歴てく",
-        grade: "2年 前期作品・チーム・企業連携",
-        date: "2024.05~2024.07",
-        img: reactors,
-        type: "code",
-        category: "production",
-        description: "ゲーミフィケーションを活用した学習アプリケーション",
-        technologies: ["React", "TypeScript", "Firebase"],
-        role: ["フロントエンド", "チームリーダー"],
-        url: "https://monosiri-hunter.vercel.app/login",
-        github: "",
-        awards: [],
-        reflection: {
-            strongPoints: [],
-            challenges: [],
-            learnings: [],
-        },
-    },
+    // {
+    //     id: 3,
+    //     title: "Moon-phase",
+    //     grade: "2年 後期・習作",
+    //     date: "2024.09~2024.10",
+    //     img: moonphase,
+    //     type: "design/code",
+    //     category: "practice",
+    //     description: "ゲーミフィケーションを活用した学習アプリケーション",
+    //     technologies: ["Next.js", "JavaScript", "Firebase"],
+    //     role: ["フロントエンド"],
+    //     url: "https://monosiri-hunter.vercel.app/login",
+    //     github: "",
+    //     awards: [],
+    //     reflection: {
+    //         strongPoints: [],
+    //         challenges: [],
+    //         learnings: [],
+    //     },
+    // },
+    // {
+    //     id: 4,
+    //     title: "歴てく",
+    //     grade: "2年 前期作品・チーム・企業連携",
+    //     date: "2024.05~2024.07",
+    //     img: reactors,
+    //     type: "code",
+    //     category: "production",
+    //     description: "ゲーミフィケーションを活用した学習アプリケーション",
+    //     technologies: ["React", "TypeScript", "Firebase"],
+    //     role: ["フロントエンド", "チームリーダー"],
+    //     url: "https://monosiri-hunter.vercel.app/login",
+    //     github: "",
+    //     awards: [],
+    //     reflection: {
+    //         strongPoints: [],
+    //         challenges: [],
+    //         learnings: [],
+    //     },
+    // },
     // {
     //     id: 6,
     //     title: "Relax coffee",
