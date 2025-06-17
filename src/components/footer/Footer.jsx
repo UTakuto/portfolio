@@ -3,7 +3,7 @@ export default function Footer() {
         <>
             <footer>
                 <p>
-                    <small>2024 &copy; Takuto Uemori Portfolio</small>
+                    <small>2025 &copy; Takuto Uemori Portfolio</small>
                 </p>
             </footer>
         </>
