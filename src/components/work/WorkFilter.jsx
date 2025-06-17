@@ -23,12 +23,12 @@ export default function WorkFilter({ selectedCategory, onCategoryChange }) {
                 >
                     習作
                 </button>
-                <button
+                {/* <button
                     className={selectedCategory === "design" ? "active" : ""}
                     onClick={() => onCategoryChange("design")}
                 >
                     デザイン
-                </button>
+                </button> */}
             </div>
         </div>
     );
