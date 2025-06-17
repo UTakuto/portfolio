@@ -1,10 +1,39 @@
 import "./header.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+    const navigate = useNavigate();
+
+    const handleNavigation = (e, sectionId) => {
+        e.preventDefault(); // デフォルトの動作を防ぐ
+        // 現在のパスが"/"でない場合はホームページに戻る
+        if (window.location.pathname !== "/") {
+            navigate("/");
+            // ページ遷移後にスクロールするため少し待つ
+            setTimeout(() => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 100);
+        } else {
+            // 既にホームページにいる場合は直接スクロール
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    };
+
+    const handleHomeClick = (e) => {
+        e.preventDefault(); // デフォルトの動作を防ぐ
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
     return (
         <header>
             <figure className="logo">
-                <a href="#" data-text="Portfolio">
+                <a onClick={handleHomeClick}>
                     <img src="/portfolioLogo.svg" alt="portfolioLogo" />
                 </a>
             </figure>
@@ -12,24 +41,16 @@ export default function Header() {
             <nav>
                 <ul>
                     <li>
-                        <a href="#" data-text="Home">
-                            Home
-                        </a>
+                        <a onClick={handleHomeClick}>Home</a>
                     </li>
                     <li>
-                        <a href="#" data-text="About">
-                            About
-                        </a>
+                        <a onClick={(e) => handleNavigation(e, "about")}>About</a>
                     </li>
                     <li>
-                        <a href="#" data-text="Works">
-                            Works
-                        </a>
+                        <a onClick={(e) => handleNavigation(e, "works")}>Works</a>
                     </li>
                     <li>
-                        <a href="#" data-text="Contact">
-                            Contact
-                        </a>
+                        <a onClick={(e) => e.preventDefault(e, "contact")}>Contact</a>
                     </li>
                 </ul>
             </nav>
