@@ -132,15 +132,6 @@
     }
 }
 
-/* .workReflection {
-    padding-top: 40px;
-
-    h2 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-    }
-} */
-
 .workReflection {
     margin-top: 60px;
     padding: 30px;
@@ -199,6 +190,12 @@
     width: 100%;
     height: auto;
     display: block;
+}
+
+.backButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) {
