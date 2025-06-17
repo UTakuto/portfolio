@@ -7,6 +7,7 @@ import Work from "./pages/WorkPage";
 import { Route, Routes } from "react-router-dom";
 import About from "./pages/AboutPage";
 import WorkDetails from "./components/work/WorkDetails";
+import Contact from "./pages/ContactPage";
 // import Particles from "./components/particles/particles";
 
 export default function App() {
@@ -75,6 +76,8 @@ export default function App() {
                             <About />
 
                             <Work />
+
+                            <Contact />
                         </div>
                     }
                 />
