@@ -5,11 +5,9 @@ export default function Header() {
     const navigate = useNavigate();
 
     const handleNavigation = (e, sectionId) => {
-        e.preventDefault(); // デフォルトの動作を防ぐ
-        // 現在のパスが"/"でない場合はホームページに戻る
+        e.preventDefault();
         if (window.location.pathname !== "/") {
             navigate("/");
-            // ページ遷移後にスクロールするため少し待つ
             setTimeout(() => {
                 const element = document.getElementById(sectionId);
                 if (element) {
@@ -17,7 +15,6 @@ export default function Header() {
                 }
             }, 100);
         } else {
-            // 既にホームページにいる場合は直接スクロール
             const element = document.getElementById(sectionId);
             if (element) {
                 element.scrollIntoView({ behavior: "smooth" });
@@ -26,8 +23,30 @@ export default function Header() {
     };
 
     const handleHomeClick = (e) => {
-        e.preventDefault(); // デフォルトの動作を防ぐ
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        e.preventDefault();
+        if (window.location.pathname !== "/") {
+            navigate("/");
+        } else {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    };
+
+    const handleContact = (e) => {
+        e.preventDefault();
+        if (window.location.pathname !== "/") {
+            navigate("/");
+            setTimeout(() => {
+                const element = document.getElementById("contact");
+                if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }
+            }, 100);
+        } else {
+            const element = document.getElementById("contact");
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
     };
 
     return (
@@ -50,7 +69,7 @@ export default function Header() {
                         <a onClick={(e) => handleNavigation(e, "works")}>Works</a>
                     </li>
                     <li>
-                        <a onClick={(e) => e.preventDefault(e, "contact")}>Contact</a>
+                        <a onClick={handleContact}>Contact</a>
                     </li>
                 </ul>
             </nav>
