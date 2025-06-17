@@ -1,7 +1,8 @@
-import "./aboutDetail.css";
+import { FaGithub } from "react-icons/fa";
 import PhotoPage from "../../pages/PhotoPage";
 import { Route, Routes } from "react-router-dom";
 import myImage from "../../assets/my.jpeg";
+import "./aboutDetail.css";
 
 export default function AboutDetail() {
     return (
@@ -27,6 +28,17 @@ export default function AboutDetail() {
                                         </span>
                                         <br />
                                     </p>
+                                    <div className="githubLink">
+                                        <a
+                                            href="https://github.com/UTakuto"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="link"
+                                        >
+                                            <FaGithub />
+                                            <span>GitHub</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </section>
