@@ -7,10 +7,10 @@
     margin: 0 auto;
     padding-bottom: 50px;
     h2 {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-top: 2rem;
         margin-bottom: 1rem;
-        color: #333;
+        color: #c6c6c6;
     }
 
     h3 {
@@ -28,12 +28,12 @@
         line-height: 1.8;
         margin-bottom: 4rem;
         color: #666;
-        padding-left: 1rem;
+        padding-left: 1.8rem;
 
         &::before {
             content: "";
             position: absolute;
-            left: 0;
+            left: 8px;
             top: 3px;
             display: block;
             width: 3px;
