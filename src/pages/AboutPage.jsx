@@ -2,7 +2,7 @@ import Button from "../components/button/Button";
 import { Route, Routes } from "react-router-dom";
 import AboutDetail from "../components/about/AboutDetail";
 import "../styles/about.css";
-import myImage from "../assets/my.jpeg";
+import myImage from "../assets/myPhoto.jpg";
 
 export default function About() {
     return (

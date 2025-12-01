@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import PhotoPage from "../../pages/PhotoPage";
 import { Route, Routes } from "react-router-dom";
-import myImage from "../../assets/my.jpeg";
+import myImage from "../../assets/myPhoto.jpg";
 import "./aboutDetail.css";
 
 export default function AboutDetail() {
